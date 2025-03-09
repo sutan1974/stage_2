@@ -14,7 +14,7 @@ st.title("Price Prediction")
 
 # Load model
 try:
-    model = jodlib.load("XGboost_GridSearchCV.jodlib")
+    model = joblib.load("XGboost_GridSearchCV.joblib")
     st.success("✅ Model successfully loaded!")
 except FileNotFoundError:
     st.error("⚠️ Model file 'XGboost_GridSearchCV.jodlib' not found. Please check the file.")
